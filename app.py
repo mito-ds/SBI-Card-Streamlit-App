@@ -26,7 +26,7 @@ message = ''
 if no_dataframes: 
     message = "You must upload a file before exporting the cleaned data."
 else: 
-    message = "Your file has less than 1 million rows, so you can export it as an XLSX file."
+    message = "Download the updated data as a Pickle file."
 st.markdown(message)
 
 pickle_button = st.button("Download as Pickle file", key='pickle_button', disabled=no_dataframes)
